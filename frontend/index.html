@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#classes">Classes</a></li>
+                <li><a href="#bookings">Bookings</a></li>
+                <li><a href="#attendance">Attendance</a></li>
+                <li><a href="#login">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Classes section -->
+        <section id="classes">
+            <h2>Classes</h2>
+            <table id="classes-table">
+                <thead>
+                    <tr>
+                        <th>Class Name</th>
+                        <th>Time</th>
+                        <th>Instructor</th>
+                    </tr>
+                </thead>
+                <tbody id="classes-tbody">
+                    <!-- Classes data will be populated here -->
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Bookings section -->
+        <section id="bookings">
+            <h2>Bookings</h2>
+            <form id="booking-form">
+                <label for="class-name">Class Name:</label>
+                <select id="class-name" name="class-name">
+                    <!-- Class names will be populated here -->
+                </select>
+                <label for="booking-date">Date:</label>
+                <input type="date" id="booking-date" name="booking-date">
+                <button id="book-class-btn">Book Class</button>
+            </form>
+        </section>
+
+        <!-- Attendance section -->
+        <section id="attendance">
+            <h2>Attendance</h2>
+            <table id="attendance-table">
+                <thead>
+                    <tr>
+                        <th>Class Name</th>
+                        <th>Date</th>
+                        <th>Attendees</th>
+                    </tr>
+                </thead>
+                <tbody id="attendance-tbody">
+                    <!-- Attendance data will be populated here -->
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Login section -->
+        <section id="login">
+            <h2>Login</h2>
+            <form id="login-form">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password">
+                <button id="login-btn">Login</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
